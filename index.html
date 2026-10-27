@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10100f">
+<meta name="description" content="A question can reveal what a thousand conversations never do. Explore human nature, relationships, and the things people rarely ask.">
+<title>Lemme Know About You — The Human Afterhours</title>
+<style>
+:root{--bg:#10100f;--panel:#181816;--panel2:#20201d;--text:#f3eee4;--muted:#aaa397;--gold:#d5a86b;--gold2:#f0c78b;--line:#38352f;--danger:#c88e7b;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,rgba(158,108,54,.19),transparent 42%),radial-gradient(ellipse at 100% 70%,rgba(93,74,48,.09),transparent 35%),var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");z-index:0}
+button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}.app{position:relative;z-index:1;max-width:1180px;margin:auto;padding:24px clamp(16px,4vw,48px) 32px;min-height:100vh;display:flex;flex-direction:column}.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid rgba(213,168,107,.2);padding:5px 0 20px}.brand{display:flex;align-items:center;gap:12px;cursor:pointer}.brand-mark{width:35px;height:35px;border:1px solid #9f8058;border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-family:var(--serif);font-size:20px}.brand-name{font-family:var(--serif);letter-spacing:.08em;font-size:14px}.brand-sub{font-size:9px;letter-spacing:.22em;color:var(--muted);margin-top:4px}.top-actions{display:flex;gap:8px}.icon-btn,.quiet-btn{border:1px solid var(--line);background:rgba(255,255,255,.025);color:var(--muted);border-radius:999px;padding:9px 12px;font-size:12px;transition:.2s}.icon-btn:hover,.quiet-btn:hover{border-color:var(--gold);color:var(--text)}main{flex:1;display:flex;flex-direction:column}.screen{display:none;animation:appear .45s ease both}.screen.active{display:block}@keyframes appear{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}.hero{max-width:820px;margin:clamp(52px,11vh,112px) auto 72px;text-align:center}.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:650}.hero h1{font:clamp(48px,9vw,96px)/.98 var(--serif);font-weight:400;letter-spacing:-.055em;margin:22px 0}.hero h1 span{color:var(--gold2);font-style:italic}.hero p{max-width:480px;margin:22px auto;color:#b9b2a7;line-height:1.8;font-size:15px}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}.primary,.secondary{border-radius:999px;padding:14px 23px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;transition:.2s}.primary{border:1px solid var(--gold);background:var(--gold);color:#17130e;font-weight:750}.primary:hover{background:var(--gold2);transform:translateY(-1px)}.secondary{border:1px solid #51483b;background:transparent;color:var(--text)}.secondary:hover{border-color:var(--gold);background:rgba(213,168,107,.07)}.mode-heading{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:0 0 16px}.mode-heading h2,.section-title{font:28px var(--serif);font-weight:400;margin:0}.muted{color:var(--muted);font-size:12px;line-height:1.6}.mode-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.mode-card{min-height:145px;text-align:left;padding:18px 15px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.01));border:1px solid #33312b;border-radius:12px;color:var(--text);transition:.25s;position:relative;overflow:hidden}.mode-card:before{content:"";position:absolute;width:100px;height:100px;border-radius:50%;background:rgba(213,168,107,.08);filter:blur(20px);right:-50px;bottom:-50px}.mode-card:hover{transform:translateY(-3px);border-color:#8d704b}.mode-number{color:var(--gold);font-size:10px;letter-spacing:.16em}.mode-card h3{font:20px var(--serif);font-weight:400;margin:18px 0 7px}.mode-card p{color:var(--muted);font-size:11px;line-height:1.5;margin:0}.home-lower{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:52px 0 30px}.feature-panel{border-top:1px solid var(--line);padding-top:18px}.featured-question{font:clamp(19px,2vw,25px)/1.35 var(--serif);margin:13px 0 18px}.mini-actions{display:flex;gap:8px;flex-wrap:wrap}.small-btn{border:1px solid var(--line);background:transparent;color:#c6bfb3;padding:8px 11px;border-radius:7px;font-size:11px}.small-btn:hover{border-color:var(--gold);color:var(--text)}.workspace{max-width:900px;margin:48px auto 60px;width:100%}.workspace-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.crumb{font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}.question-shell{position:relative;margin:25px 0 18px;padding:clamp(28px,6vw,64px) clamp(20px,6vw,68px);min-height:310px;border:1px solid #41392d;border-radius:14px;background:radial-gradient(ellipse at 50% 0%,rgba(213,168,107,.10),transparent 60%),linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.008));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden}.question-shell:before,.question-shell:after{content:"";position:absolute;width:100px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);top:18px;left:calc(50% - 50px);opacity:.55}.question-shell:after{top:auto;bottom:18px}.q-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}.question-text{font:clamp(28px,5.2vw,48px)/1.22 var(--serif);letter-spacing:-.025em;max-width:720px;margin:0}.q-meta{font-size:11px;color:var(--muted);margin-top:26px}.progress{height:2px;background:#38342d;margin:20px 0 24px;border-radius:2px;overflow:hidden}.progress span{display:block;height:100%;background:var(--gold);width:0;transition:width .25s}.control-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.control-row .primary{min-width:150px}.utility-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:22px}.utility-group{display:flex;gap:7px;flex-wrap:wrap}.timer-panel{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px;padding:14px;border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.13)}.timer-display{font:22px var(--serif);color:var(--gold2);min-width:54px;text-align:center}.timer-panel select,.field,textarea{background:#171715;border:1px solid #454036;color:var(--text);border-radius:7px;padding:10px 11px;font-size:12px}.timer-panel label{font-size:11px;color:var(--muted)}.timer-panel input{accent-color:var(--gold)}.timer-note{font-size:10px;color:var(--muted)}.depth-row{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:18px;flex-wrap:wrap}.depth-btn{background:transparent;color:var(--muted);border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-size:11px}.depth-btn.selected{background:rgba(213,168,107,.12);border-color:var(--gold);color:var(--gold2)}.content-page{max-width:900px;margin:45px auto 60px;width:100%}.page-intro{margin-bottom:24px}.page-intro h2{font:42px var(--serif);font-weight:400;margin:10px 0}.searchbar{display:flex;gap:8px;margin:20px 0;flex-wrap:wrap}.searchbar input{flex:1;min-width:160px}.results{display:grid;gap:9px}.result-card{border:1px solid var(--line);background:rgba(255,255,255,.02);padding:16px;border-radius:9px;display:flex;justify-content:space-between;gap:12px;align-items:center}.result-card p{font:19px/1.35 var(--serif);margin:0 0 8px}.result-card small{font-size:10px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase}.result-actions{display:flex;gap:6px;flex-shrink:0}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field-wrap label{display:block;font-size:11px;color:var(--muted);margin:0 0 7px}.field-wrap .field{width:100%}.group-names{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0}.turn-card{border:1px solid #4d4130;background:rgba(213,168,107,.06);border-radius:10px;padding:15px;margin:20px 0;display:flex;justify-content:space-between;align-items:center;gap:10px}.turn-name{font:24px var(--serif);color:var(--gold2)}.empty{padding:30px;text-align:center;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:13px}.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#f1e5d1;color:#1a1712;padding:11px 17px;border-radius:999px;font-size:12px;z-index:20;transition:.25s;box-shadow:0 8px 40px #0008}.toast.show{opacity:1;transform:translate(-50%,0)}footer{border-top:1px solid rgba(213,168,107,.16);padding-top:18px;margin-top:30px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#7f796f;font-size:10px;letter-spacing:.04em}.footer-links{display:flex;gap:15px}.footer-links button{background:none;border:0;color:#aaa397;font-size:10px;padding:0}.footer-links button:hover{color:var(--gold2)}.light{--bg:#e9e2d6;--panel:#f3eee5;--panel2:#fffaf1;--text:#211e19;--muted:#6f685d;--gold:#9b6c32;--gold2:#80531f;--line:#c9bca9;background:radial-gradient(ellipse at 50% -15%,rgba(158,108,54,.15),transparent 42%),var(--bg)}.light .question-shell,.light .mode-card,.light .result-card{background:rgba(255,255,255,.45)}.light .timer-panel,.light .field,.light .timer-panel select,.light textarea{background:#f6f0e7;color:#211e19}.light .hero p{color:#625a4f}.light .secondary{color:var(--text)}
+@media(max-width:820px){.mode-grid{grid-template-columns:repeat(2,1fr)}.mode-card:last-child{grid-column:span 2;min-height:110px}.home-lower{grid-template-columns:1fr}.hero{margin-top:65px}.question-shell{min-height:280px}.topbar{align-items:flex-start}.brand-name{font-size:12px}.icon-btn{padding:8px 10px}}
+@media(max-width:480px){.app{padding:16px 14px 24px}.brand-mark{width:31px;height:31px}.brand-sub{font-size:8px}.top-actions{gap:5px}.icon-btn{font-size:10px;padding:8px}.hero h1{font-size:52px}.hero p{font-size:13px}.mode-card{padding:14px;min-height:135px}.mode-card h3{font-size:18px}.workspace{margin:32px auto 40px}.question-shell{min-height:310px;padding:28px 18px}.question-text{font-size:30px}.control-row .primary{min-width:120px}.control-row button{padding:12px 14px}.field-grid,.group-names{grid-template-columns:1fr}.result-card{align-items:flex-start}.result-card p{font-size:17px}.result-actions{flex-direction:column}.page-intro h2{font-size:36px}footer{font-size:9px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand" id="brandHome" role="button" tabindex="0" aria-label="Go home"><div class="brand-mark">L.</div><div><div class="brand-name">LEMME KNOW ABOUT YOU</div><div class="brand-sub">THE HUMAN AFTERHOURS</div></div></div>
+  <div class="top-actions"><button class="icon-btn" id="searchOpen">⌕ Search</button><button class="icon-btn" id="favoritesOpen">♡ Saved <span id="favCount">0</span></button><button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button></div>
+</header>
+<main>
+<section class="screen active" id="homeScreen">
+  <div class="hero">
+    <div class="eyebrow">A space for better conversations</div>
+    <h1>Lemme Know<br><span>About You.</span></h1>
+    <p>A question can reveal what a thousand conversations never do. Explore the thoughts, contradictions, and little truths that make us human.</p>
+    <div class="hero-actions"><button class="primary" id="enterBtn">Enter the experience ↗</button><button class="secondary" id="surpriseBtn">Surprise me</button></div>
+  </div>
+  <div class="mode-heading"><div><div class="eyebrow" style="margin-bottom:8px">Choose your atmosphere</div><h2>Where shall we begin?</h2></div><span class="muted">01 / 05</span></div>
+  <div class="mode-grid" id="modeGrid">
+    <button class="mode-card" data-mode="icebreaker"><span class="mode-number">01 — LIGHT</span><h3>The Icebreaker</h3><p>Easy questions. Unexpected answers.</p></button>
+    <button class="mode-card" data-mode="between"><span class="mode-number">02 — CONNECTION</span><h3>Between Us</h3><p>Friendship, trust, and understanding.</p></button>
+    <button class="mode-card" data-mode="mirror"><span class="mode-number">03 — REFLECTION</span><h3>The Mirror</h3><p>Meet the person you are becoming.</p></button>
+    <button class="mode-card" data-mode="human"><span class="mode-number">04 — OBSERVATION</span><h3>Human Nature</h3><p>People, society, and contradictions.</p></button>
+    <button class="mode-card" data-mode="afterhours"><span class="mode-number">05 — DEEP</span><h3>Afterhours</h3><p>Questions that stay with you.</p></button>
+  </div>
+  <div class="home-lower">
+    <div class="feature-panel"><div class="eyebrow">Question of the day</div><div class="featured-question" id="dailyQuestion">What do people only learn to appreciate after it is gone?</div><div class="mini-actions"><button class="small-btn" id="dailyStart">Explore this question ↗</button><button class="small-btn" id="dailyCopy">Copy question</button></div></div>
+    <div class="feature-panel"><div class="eyebrow">Make it yours</div><div class="featured-question">A conversation, your rules.</div><p class="muted">Set a timer, mix categories, take turns, or simply let the next question surprise you.</p><div class="mini-actions"><button class="small-btn" id="customOpen">Build a session ↗</button><button class="small-btn" id="groupOpen">Group mode ↗</button></div></div>
+  </div>
+</section>
+
+<section class="screen" id="sessionScreen">
+  <div class="workspace">
+    <div class="workspace-top"><button class="quiet-btn" id="backHome">← Home</button><div class="crumb" id="sessionCrumb">THE MIRROR · REFLECTIVE</div><button class="quiet-btn" id="endSession">End session ×</button></div>
+    <div class="question-shell">
+      <div class="q-label" id="qLabel">HUMAN NATURE · REFLECTIVE</div>
+      <h2 class="question-text" id="questionText">What do people pretend not to care about because admitting it would make them vulnerable?</h2>
+      <div class="q-meta" id="qMeta">A little curiosity can change a conversation.</div>
+    </div>
+    <div class="progress"><span id="progressBar"></span></div>
+    <div class="control-row"><button class="secondary" id="previousBtn">← Previous</button><button class="secondary" id="skipBtn">Skip</button><button class="primary" id="nextBtn">Next question →</button></div>
+    <div class="depth-row"><span class="muted" style="margin-right:5px">DEPTH</span><button class="depth-btn" data-depth="light">Light</button><button class="depth-btn selected" data-depth="reflective">Reflective</button><button class="depth-btn" data-depth="deep">Uncomfortable</button></div>
+    <div class="utility-row"><div class="utility-group"><button class="small-btn" id="saveBtn">♡ Save</button><button class="small-btn" id="copyBtn">Copy question</button><button class="small-btn" id="shareBtn">Share ↗</button></div><div class="utility-group"><button class="small-btn" id="randomBtn">↻ Surprise me</button><button class="small-btn" id="fullBtn">Focus mode ⛶</button></div></div>
+    <div class="timer-panel"><label for="timerSelect">TIMER</label><select id="timerSelect"><option value="0">Off</option><option value="15">15 sec</option><option value="30">30 sec</option><option value="45">45 sec</option><option value="60">60 sec</option><option value="90">90 sec</option><option value="120">120 sec</option></select><span class="timer-display" id="timerDisplay">—:—</span><button class="small-btn" id="timerStart">Start</button><button class="small-btn" id="timerPause">Pause</button><button class="small-btn" id="timerReset">Reset</button><label style="display:flex;align-items:center;gap:6px"><input type="checkbox" id="autoNext"> Auto-next</label><span class="timer-note" id="timerNote">A little time to think. No pressure.</span></div>
+  </div>
+</section>
+
+<section class="screen" id="searchScreen">
+ <div class="content-page"><div class="page-intro"><div class="eyebrow">The question library</div><h2>Find the right question.</h2><p class="muted">Search a thought, a feeling, or a topic. Follow your curiosity.</p></div>
+ <div class="searchbar"><input class="field" id="searchInput" placeholder="Try “trust”, “fear”, “friendship”…" aria-label="Search questions"><select class="field" id="categoryFilter"><option value="">All categories</option></select><select class="field" id="depthFilter"><option value="">All depths</option><option value="light">Light</option><option value="reflective">Reflective</option><option value="deep">Uncomfortable</option></select></div>
+ <div class="muted" id="searchCount" style="margin-bottom:12px"></div><div class="results" id="searchResults"></div></div>
+</section>
+
+<section class="screen" id="favoritesScreen">
+ <div class="content-page"><div class="page-intro"><div class="eyebrow">Your personal archive</div><h2>Questions worth keeping.</h2><p class="muted">Saved in this browser, ready whenever you return.</p></div><div class="results" id="favoriteResults"></div></div>
+</section>
+
+<section class="screen" id="customScreen">
+ <div class="content-page"><div class="page-intro"><div class="eyebrow">Set the scene</div><h2>Build your session.</h2><p class="muted">Choose the mood. We'll find the questions.</p></div>
+ <div class="field-grid">
+  <div class="field-wrap"><label for="customMode">Experience</label><select class="field" id="customMode"><option value="mixed">Mixed discovery</option><option value="icebreaker">The Icebreaker</option><option value="between">Between Us</option><option value="mirror">The Mirror</option><option value="human">Human Nature</option><option value="afterhours">Afterhours</option></select></div>
+  <div class="field-wrap"><label for="customDepth">Question depth</label><select class="field" id="customDepth"><option value="any">Any depth</option><option value="light">Light</option><option value="reflective">Reflective</option><option value="deep">Uncomfortable</option></select></div>
+  <div class="field-wrap"><label for="customTimer">Timer per question</label><select class="field" id="customTimer"><option value="0">Off</option><option value="15">15 seconds</option><option value="30">30 seconds</option><option value="45">45 seconds</option><option value="60">60 seconds</option><option value="90">90 seconds</option><option value="120">120 seconds</option></select></div>
+  <div class="field-wrap"><label for="customLength">Session length</label><select class="field" id="customLength"><option value="10">10 questions</option><option value="15">15 questions</option><option value="25">25 questions</option><option value="50">50 questions</option><option value="0">Until exhausted</option></select></div>
+ </div><div style="margin-top:22px"><button class="primary" id="createSession">Create my session ↗</button></div></div>
+</section>
+
+<section class="screen" id="groupScreen">
+ <div class="content-page"><div class="page-intro"><div class="eyebrow">Pass the question around</div><h2>Better together.</h2><p class="muted">A local turn-taking mode for friends in the same room or on a call. No accounts, no awkward setup.</p></div>
+ <div class="field-wrap"><label for="participantInput">Add a participant name</label><div class="searchbar" style="margin-top:0"><input class="field" id="participantInput" placeholder="e.g. Alex" maxlength="32"><button class="secondary" id="addParticipant">Add person +</button></div></div>
+ <div class="group-names" id="participantList"></div><div class="turn-card"><div><div class="eyebrow">Answering next</div><div class="turn-name" id="currentParticipant">Add a participant</div></div><button class="secondary" id="nextParticipant">Next turn →</button></div>
+ <div class="field-wrap" style="max-width:280px;margin-bottom:20px"><label for="groupDepth">Question depth</label><select class="field" id="groupDepth" style="width:100%"><option value="light">Light</option><option value="reflective" selected>Reflective</option><option value="deep">Uncomfortable</option><option value="any">Surprise me</option></select></div><button class="primary" id="startGroup">Start group questions ↗</button></div>
+</section>
+
+<section class="screen" id="aboutScreen">
+ <div class="content-page"><div class="eyebrow">Why this exists</div><h2 class="section-title" style="font-size:48px;margin:15px 0 20px">A better question<br><i>changes the room.</i></h2><p style="font:23px/1.6 var(--serif);max-width:700px">We can talk all day and still avoid the things that help us understand one another.</p><p class="muted" style="max-width:650px;font-size:14px">Lemme Know About You is an independent question-discovery project built around curiosity, honest conversation, and the strange differences between how people see the world. Use it with friends, family, classmates, or simply to think for yourself.</p><div class="feature-panel" style="max-width:550px;margin-top:36px"><div class="eyebrow">The person behind the project</div><div class="featured-question">Engineer Shakib / Malang Jan</div><p class="muted">An independent project. Made for the questions that make us pause.</p></div></div>
+</section>
+</main>
+<footer><span>© <span id="year"></span> LEMME KNOW ABOUT YOU · CREATED BY ENGINEER SHAKIB / MALANG JAN</span><div class="footer-links"><button id="aboutOpen">About</button><button id="customFooter">Custom session</button><button id="clearData">Clear local data</button></div></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const rawQuestions = [
+["What is something completely ordinary that makes your day unexpectedly better?","Everyday Life","light","icebreaker"],
+["What tiny inconvenience can ruin your mood more than it should?","Everyday Life","light","icebreaker"],
+["Which useless skill are you strangely proud of?","Personality","light","icebreaker"],
+["What food could you eat three days in a row without getting tired of it?","Everyday Life","light","icebreaker"],
+["What is a popular thing you have never understood the appeal of?","Society","light","icebreaker,human"],
+["What small thing instantly makes someone more likable to you?","Relationships","light","icebreaker,between"],
+["If your current mood were a weather forecast, what would it be?","Personality","light","icebreaker"],
+["What is a harmless hill you are willing to die on?","Beliefs","light","icebreaker,human"],
+["What ordinary sound do you secretly enjoy?","Everyday Life","light","icebreaker"],
+["What is the most random thing you remember from childhood?","Memories","light","icebreaker,mirror"],
+["Which fictional world would you visit for one day?","Hypotheticals","light","icebreaker"],
+["What is something you thought was fancy when you were younger?","Memories","light","icebreaker,mirror"],
+["What is your most irrational pet peeve?","Personality","light","icebreaker"],
+["Would you rather always be ten minutes early or always have the perfect comeback ten minutes late?","Hypotheticals","light","icebreaker"],
+["What is a compliment you still remember?","Memories","light","icebreaker,between"],
+["What simple activity makes time disappear for you?","Habits","light","icebreaker,mirror"],
+["What is something you are surprisingly bad at?","Personality","light","icebreaker"],
+["What is one trend you are glad you never followed?","Society","light","icebreaker,human"],
+["If you could instantly become excellent at one hobby, which would you choose?","Dreams","light","icebreaker,mirror"],
+["What is the best kind of silence to share with someone?","Relationships","reflective","between,mirror"],
+["Which matters more to you: being understood or being accepted?","Identity","reflective","mirror,between"],
+["What makes someone feel safe to talk to?","Relationships","reflective","between"],
+["Can two people care about each other and still be bad for each other?","Relationships","deep","between,afterhours"],
+["What is the difference between privacy and secrecy?","Trust","reflective","between,human"],
+["When does giving someone another chance become unfair to yourself?","Boundaries","deep","between,afterhours"],
+["What kind of apology feels sincere to you?","Communication","reflective","between"],
+["What do people often mistake for love?","Relationships","deep","between,afterhours"],
+["Is it harder to admit you were wrong or to forgive someone who was?","Conflict","reflective","between,human"],
+["What does loyalty mean when the person you support is clearly wrong?","Trust","deep","between,human,afterhours"],
+["Can you forgive someone and still decide they should not be in your life?","Boundaries","reflective","between,afterhours"],
+["What makes a friendship survive long periods of silence?","Friendship","reflective","between"],
+["When does honesty become cruelty?","Communication","deep","between,human"],
+["What is one thing people do that makes you feel genuinely listened to?","Communication","reflective","between"],
+["Do you prefer people who challenge your ideas or people who make you feel understood?","Friendship","reflective","between,mirror"],
+["What is a boundary you learned to set later than you should have?","Boundaries","deep","between,mirror"],
+["What do you wish people asked you about more often?","Identity","reflective","between,mirror"],
+["How can you tell the difference between missing someone and missing how they made you feel?","Relationships","deep","between,afterhours"],
+["What is something a close friend can understand without you explaining it?","Friendship","reflective","between"],
+["Should every truth be spoken, even when nothing useful will come from it?","Morality","deep","human,afterhours"],
+["What is more revealing: how someone treats a stranger or how they treat someone who cannot help them?","Human Nature","deep","human,afterhours"],
+["Why do people sometimes defend a belief they have never examined?","Beliefs","reflective","human"],
+["What do people pretend not to care about because admitting it would make them vulnerable?","Human Nature","deep","human,mirror,afterhours"],
+["Do people become kinder when they feel secure, or when they understand suffering?","Human Nature","reflective","human"],
+["What do people confuse with confidence?","Personality","reflective","human,mirror"],
+["Why can being different feel more threatening than being wrong?","Society","deep","human,afterhours"],
+["What is something society calls normal that deserves more questioning?","Society","deep","human,afterhours"],
+["Are people more honest when they are anonymous or when they are truly known?","Human Nature","reflective","human"],
+["What makes a person powerful without giving them authority?","Power","reflective","human"],
+["Why do people judge intentions in themselves but actions in others?","Human Nature","deep","human,afterhours"],
+["Is kindness still kindness if part of you wants to be appreciated for it?","Morality","deep","human,mirror"],
+["What do people gain by pretending to be less ambitious than they are?","Ambition","reflective","human,mirror"],
+["When does fitting in become a form of self-betrayal?","Identity","deep","human,mirror"],
+["Why do people sometimes prefer a familiar problem to an unfamiliar solution?","Habits","reflective","human,mirror"],
+["What do people call 'being realistic' when they may actually be afraid?","Fear","deep","human,mirror,afterhours"],
+["Which is more dangerous: a person who never questions themselves or one who questions everything?","Beliefs","deep","human,afterhours"],
+["What ordinary behavior reveals more about someone's character than they realize?","Human Nature","reflective","human"],
+["Do people want fairness, or do they want outcomes that feel fair to them?","Morality","deep","human,afterhours"],
+["What is a truth about yourself that took years to recognize?","Self-Discovery","deep","mirror,afterhours"],
+["What part of your personality was shaped by trying to fit in?","Identity","reflective","mirror"],
+["What do you criticize in others that you sometimes do yourself?","Self-Discovery","deep","mirror,afterhours"],
+["When do you feel most like yourself?","Identity","reflective","mirror"],
+["What is something you once wanted badly but no longer want?","Dreams","reflective","mirror"],
+["What fear has influenced more of your choices than you like to admit?","Fear","deep","mirror,afterhours"],
+["What do you do when nobody expects anything from you?","Habits","reflective","mirror"],
+["Which version of yourself do you miss, if any?","Memories","deep","mirror,afterhours"],
+["What do you find difficult to accept about growing up?","Identity","reflective","mirror,afterhours"],
+["What is one belief you changed your mind about?","Beliefs","reflective","mirror,human"],
+["Do you judge yourself more by your intentions or your results?","Self-Discovery","reflective","mirror"],
+["What do you keep postponing because starting would make failure possible?","Ambition","deep","mirror,afterhours"],
+["What kind of criticism is hardest for you to hear?","Self-Discovery","reflective","mirror"],
+["What do you wish you could stop needing from other people?","Identity","deep","mirror,afterhours"],
+["What is the difference between who you are and who you perform being?","Identity","deep","mirror,afterhours"],
+["What do you secretly envy that you would struggle to admit?","Self-Discovery","deep","mirror,afterhours"],
+["Which habit is quietly shaping your future right now?","Habits","reflective","mirror"],
+["What would you change if you were not worried about explaining yourself?","Fear","reflective","mirror"],
+["What is a weakness you have learned to work with rather than eliminate?","Self-Discovery","reflective","mirror"],
+["What do you want people to understand about you without having to say it?","Identity","reflective","mirror,between"],
+["What is a truth you know intellectually but have not fully accepted emotionally?","Self-Discovery","deep","mirror,afterhours"],
+["What did your childhood teach you about expressing emotions?","Childhood","reflective","mirror"],
+["What memory feels ordinary to everyone else but important to you?","Memories","reflective","mirror"],
+["What did you believe about adults as a child that you no longer believe?","Childhood","light","icebreaker,mirror"],
+["What is something you wish you had been taught earlier?","Childhood","reflective","mirror"],
+["Which family habit have you consciously chosen to keep or leave behind?","Family","reflective","mirror,between"],
+["What did you need to hear when you were younger?","Childhood","deep","mirror,afterhours"],
+["What has become more valuable to you as you have grown older?","Life","reflective","mirror,afterhours"],
+["What does success look like when nobody else gets to define it?","Ambition","reflective","mirror"],
+["What are you willing to be bad at while learning something important?","Ambition","reflective","mirror"],
+["Would you rather be admired for something you did not enjoy or enjoy something nobody notices?","Ambition","deep","mirror,afterhours"],
+["What is the difference between ambition and the need to prove yourself?","Ambition","deep","mirror,afterhours"],
+["What would you keep doing even if you could never post about it?","Identity","reflective","mirror"],
+["What is a small decision that changed your direction more than you expected?","Life","reflective","mirror"],
+["What do you consider a meaningful use of an ordinary day?","Life","reflective","mirror"],
+["If you could ask your future self one honest question, what would it be?","Future","reflective","mirror"],
+["What would you attempt if you knew embarrassment would not last forever?","Fear","reflective","mirror"],
+["Which is harder: starting over or admitting the old plan no longer fits?","Change","deep","mirror,afterhours"],
+["What do you owe your future self?","Future","reflective","mirror,afterhours"],
+["What is something you cannot control but still spend energy fighting?","Life","reflective","mirror,afterhours"],
+["If your life stayed exactly the same for five years, what would you regret not changing?","Future","deep","mirror,afterhours"],
+["What makes a day feel wasted to you?","Habits","reflective","mirror"],
+["What would you choose if you did not need anyone to approve of it?","Identity","deep","mirror,afterhours"],
+["What does being respected mean to you, beyond being liked?","Values","reflective","mirror,human"],
+["Would you rather know an uncomfortable truth or believe a comforting lie?","Hypotheticals","deep","human,afterhours"],
+["If everyone could hear one thought you never say aloud, what would surprise them most?","Hypotheticals","deep","mirror,afterhours"],
+["Would you rather be remembered accurately or remembered fondly?","Legacy","deep","afterhours"],
+["If you could remove one social expectation from the world, what would it be?","Society","reflective","human"],
+["Would you rather have more time or more energy?","Hypotheticals","light","icebreaker,mirror"],
+["If nobody could judge your choices, what would you do differently?","Hypotheticals","deep","mirror,afterhours"],
+["Would you rather be excellent at one thing or reasonably good at many things?","Ambition","reflective","mirror"],
+["If you could learn the full truth about one mystery in your life, would you?","Hypotheticals","deep","afterhours"],
+["Would you rather always notice when someone lies or always know when someone needs help?","Hypotheticals","light","icebreaker,human"],
+["If you had to give up being understood or being forgiven, which would you choose?","Hypotheticals","deep","afterhours"],
+["Would you choose a peaceful life that felt small or a difficult life that felt meaningful?","Life","deep","afterhours"],
+["If your younger self met you today, what might surprise them?","Identity","reflective","mirror"],
+["Would you rather have the courage to leave or the patience to repair?","Relationships","deep","between,afterhours"],
+["If you could see the consequences of one decision before making it, would you want to?","Hypotheticals","reflective","afterhours"],
+["What is the kindest thing someone can do without spending money?","Values","light","icebreaker,between"],
+["What do you think people misunderstand about being alone?","Life","reflective","mirror,human"],
+["What is more difficult to rebuild: trust, confidence, or motivation?","Change","reflective","mirror,between"],
+["When does compromise become resentment?","Relationships","deep","between,afterhours"],
+["Can a person be sincere and still be wrong about their own motives?","Human Nature","deep","human,afterhours"],
+["What do you think people most often confuse with maturity?","Personality","reflective","human,mirror"],
+["Why is it sometimes easier to give advice than to follow it?","Habits","reflective","human,mirror"],
+["What is something people pursue because they fear being ordinary?","Ambition","deep","human,afterhours"],
+["When does protecting your peace become avoiding responsibility?","Boundaries","deep","mirror,afterhours"],
+["How much of your taste is genuinely yours, and how much did you inherit?","Identity","reflective","human,mirror"],
+["What is one assumption you make about people that you should question?","Beliefs","deep","human,afterhours"],
+["Can a good outcome justify a dishonest method?","Morality","deep","human,afterhours"],
+["What responsibility do we have to people who see the world differently?","Morality","reflective","human"],
+["What makes an ordinary promise worth trusting?","Trust","reflective","between"],
+["Which hurts more: being excluded or being included out of obligation?","Relationships","deep","between,afterhours"],
+["What do you wish people understood about your silence?","Communication","reflective","between,mirror"],
+["What is the difference between being patient and accepting too little?","Boundaries","deep","mirror,afterhours"],
+["How can you tell when you are defending a principle versus defending your ego?","Morality","deep","human,mirror"],
+["What is something you learned by watching rather than being told?","Learning","reflective","mirror"],
+["Which matters more in a disagreement: being accurate or preserving trust?","Conflict","deep","between,human"],
+["What makes a person difficult to manipulate?","Human Nature","reflective","human"],
+["What is a belief you hold lightly enough to revise?","Beliefs","reflective","human,mirror"],
+["What do people sacrifice to appear successful?","Ambition","deep","human,afterhours"],
+["What is the difference between privacy and loneliness in the digital age?","Modern Life","reflective","human,mirror"],
+["Does having more choices make people freer or more anxious?","Modern Life","reflective","human"],
+["What online behavior would feel strange if everyone did it face to face?","Modern Life","light","icebreaker,human"],
+["What do people gain and lose by documenting every experience?","Modern Life","reflective","human"],
+["How can you tell whether a habit serves you or simply distracts you?","Habits","reflective","mirror"],
+["What is something that looks productive but may be avoidance?","Habits","deep","mirror,afterhours"],
+["Which is harder to change: a habit, an identity, or a social circle?","Change","reflective","mirror"],
+["What is one ordinary responsibility that deserves more respect?","Everyday Life","light","icebreaker"],
+["When do routines create freedom rather than restriction?","Habits","reflective","mirror"],
+["What do you think people owe their family, and what do they not owe?","Family","deep","between,afterhours"],
+["Can someone love their family and still need distance from them?","Family","deep","between,afterhours"],
+["What is one quality you hope people feel when they spend time with you?","Identity","reflective","mirror,between"],
+["What is a kind of courage that rarely gets recognized?","Values","reflective","human,mirror"],
+["What would you protect even if it cost you popularity?","Values","deep","human,afterhours"],
+["What makes an achievement meaningful after the excitement fades?","Ambition","reflective","mirror"],
+["What is the difference between contentment and giving up?","Life","deep","mirror,afterhours"],
+["What do you find beautiful that most people overlook?","Everyday Life","light","icebreaker,mirror"],
+["What is something you used to take personally that you now understand differently?","Growth","reflective","mirror"],
+["What kind of person brings out the best in you?","Relationships","reflective","between"],
+["What makes it difficult to accept help?","Identity","reflective","mirror,between"],
+["When is silence a form of care, and when is it avoidance?","Communication","deep","between,afterhours"],
+["What is the difference between being needed and being valued?","Relationships","deep","between,afterhours"],
+["How do you want to respond when someone disappoints you?","Conflict","reflective","between,mirror"],
+["What do you think a person reveals when plans go wrong?","Human Nature","reflective","human"],
+["What is one thing you would never want success to cost you?","Ambition","deep","mirror,afterhours"],
+["What do you think makes a life feel rich even without much money?","Life","reflective","mirror"],
+["What is a question you wish more people were brave enough to ask?","Communication","reflective","between,mirror"],
+["What does forgiveness mean if the relationship never returns to what it was?","Relationships","deep","between,afterhours"],
+["What do you owe someone who misunderstood you despite your best efforts?","Communication","deep","between,afterhours"],
+["What is one way you have changed that the people closest to you might not notice?","Growth","reflective","mirror"],
+["What would you rather be known for: your principles, your kindness, or your achievements?","Legacy","reflective","mirror,human"],
+["What do people tend to realize too late about attention?","Modern Life","reflective","human,afterhours"],
+["What is the difference between confidence and certainty?","Personality","reflective","human,mirror"],
+["When is it wiser to ask another question instead of giving an answer?","Communication","reflective","between,human"],
+["What makes a disagreement worth having?","Conflict","reflective","human,between"],
+["Which is more revealing: what someone celebrates or what they resent?","Human Nature","deep","human,afterhours"],
+["What do you want your life to contain more of, not just achieve more of?","Future","reflective","mirror"],
+["What is something you would like to understand rather than judge?","Growth","reflective","human,mirror"],
+["What do you think people hide behind humor?","Emotions","deep","human,afterhours"],
+["What is the difference between being independent and refusing to depend on anyone?","Identity","reflective","mirror,between"],
+["How can you tell when you are staying out of love versus staying out of fear?","Relationships","deep","between,afterhours"],
+["What is one thing you hope never becomes normal to you?","Values","reflective","mirror"],
+["What does a meaningful apology need besides the words 'I'm sorry'?","Communication","reflective","between"],
+["If you could make everyone understand one thing about human behavior, what would it be?","Human Nature","reflective","human"],
+["What kind of truth should a person be willing to hear about themselves?","Self-Discovery","deep","mirror,afterhours"],
+["What do you want to become better at that has nothing to do with achievement?","Growth","reflective","mirror"],
+["What is a small act of respect that people often overlook?","Values","light","icebreaker,between"],
+["What makes someone feel like home without being a place?","Relationships","reflective","between,afterhours"],
+["What do you think we owe the people we will never meet?","Morality","deep","human,afterhours"],
+["What is one thing you hope your future self thanks you for?","Future","reflective","mirror"],
+["When does curiosity become intrusion?","Boundaries","reflective","human,between"],
+["What is something you can understand without agreeing with?","Beliefs","reflective","human"],
+["What kind of regret teaches you something useful?","Life","deep","mirror,afterhours"],
+["What is more important in a long friendship: shared history or shared direction?","Friendship","reflective","between"],
+["What makes a person feel truly seen?","Relationships","reflective","between"],
+["What do you think people need more of: honesty, patience, or courage?","Values","reflective","human,mirror"],
+["What would you do differently if you trusted your ability to recover from mistakes?","Fear","reflective","mirror"],
+["What does it mean to live according to your values when it becomes inconvenient?","Morality","deep","human,afterhours"],
+["What do you think is the most underestimated form of intelligence?","Personality","reflective","human"],
+["What is a difficult conversation you are glad you eventually had?","Communication","reflective","between,mirror"],
+["What do people often mistake for closure?","Relationships","deep","between,afterhours"],
+["What is something you wish you could explain without being misunderstood?","Identity","reflective","between,mirror"],
+["What is one belief you inherited that you chose to keep?","Beliefs","reflective","mirror,human"],
+["How do you decide which problems deserve your attention?","Life","reflective","mirror"],
+["What is the difference between being liked and being trusted?","Relationships","reflective","between,human"],
+["What would a more honest version of success look like for you?","Ambition","deep","mirror,afterhours"],
+["What is one question you would ask a stranger if you knew they would answer honestly?","Hypotheticals","reflective","icebreaker,between"],
+["What do you think people are most afraid others will discover about them?","Fear","deep","human,afterhours"],
+["What is one thing you could do today that your future self would notice?","Future","light","mirror"],
+["What does it mean to be fair to yourself?","Values","reflective","mirror"],
+["What makes a conversation worth remembering?","Communication","reflective","between"],
+["What is something you no longer need to prove?","Identity","deep","mirror,afterhours"],
+["If your life had a recurring lesson, what might it be?","Life","reflective","mirror,afterhours"],
+["What is the difference between a life that looks good and one that feels right?","Life","deep","mirror,afterhours"],
+["What is something you hope people feel free to be around you?","Relationships","reflective","between"],
+["What would you like to be brave enough to begin?","Dreams","reflective","mirror"],
+["What is one thing that deserves more thought and less reaction?","Society","reflective","human"],
+["What can a person learn from the way they handle boredom?","Habits","reflective","mirror"],
+["What is a value you would keep even if it made life harder?","Values","deep","human,afterhours"],
+["What is one thing you can appreciate about someone you disagree with?","Beliefs","reflective","human,between"],
+["What do you hope never becomes more important than your character?","Values","deep","mirror,afterhours"]
+];
+const questions = rawQuestions.map((q,i)=>({id:"q"+(i+1),text:q[0],category:q[1],depth:q[2],modes:q[3].split(",")}));
+const modeInfo={icebreaker:{name:"THE ICEBREAKER",desc:"Easy questions. Unexpected answers.",depth:"light"},between:{name:"BETWEEN US",desc:"Friendship, trust, and understanding.",depth:"reflective"},mirror:{name:"THE MIRROR",desc:"Meet the person you are becoming.",depth:"reflective"},human:{name:"HUMAN NATURE",desc:"People, society, and contradictions.",depth:"reflective"},afterhours:{name:"AFTERHOURS",desc:"Questions that stay with you.",depth:"deep"},mixed:{name:"RANDOM DISCOVERY",desc:"Follow the question wherever it leads.",depth:"reflective"}};
+const $=id=>document.getElementById(id);
+const safeRead=(key,fallback)=>{try{const v=JSON.parse(localStorage.getItem(key));return v??fallback}catch{return fallback}};
+let favorites=new Set(safeRead("lmya_favorites",[])),customQuestions=safeRead("lmya_custom",[]),seenGlobal=new Set(),session={mode:"mixed",depth:"reflective",pool:[],history:[],index:0,limit:0},participants=[],participantIndex=0,timerId=null,timerRemaining=0,timerRunning=false;
+let currentQuestion=null;
+function allQuestions(){return [...questions,...customQuestions]}
+function toast(msg){const el=$("toast");el.textContent=msg;el.classList.add("show");clearTimeout(toast._t);toast._t=setTimeout(()=>el.classList.remove("show"),2200)}
+function persist(){localStorage.setItem("lmya_favorites",JSON.stringify([...favorites]));localStorage.setItem("lmya_custom",JSON.stringify(customQuestions))}
+function showScreen(id){document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("active",s.id===id));window.scrollTo({top:0,behavior:"smooth"});if(id==="favoritesScreen")renderFavorites();if(id==="searchScreen")renderSearch();if(id==="groupScreen")renderParticipants()}
+function categoryMatches(q,mode){return mode==="mixed"||q.modes.includes(mode)}
+function getPool(mode,depth){return allQuestions().filter(q=>categoryMatches(q,mode)&&(depth==="any"||q.depth===depth))}
+function shuffled(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function startSession(mode="mixed",depth="any",limit=0,firstId=null){
+ stopTimer();session={mode,depth,pool:shuffled(getPool(mode,depth)),history:[],index:0,limit:Number(limit)||0};seenGlobal=new Set();
+ if(firstId){const first=allQuestions().find(q=>q.id===firstId);if(first){session.pool=session.pool.filter(q=>q.id!==firstId);session.history.push(first);seenGlobal.add(first.id);session.index=0}}
+ if(!session.history.length)appendNext();else currentQuestion=session.history[0];
+ $("timerSelect").value=$("customTimer").value||"0";$("timerDisplay").textContent="—:—";$("autoNext").checked=false;showScreen("sessionScreen");renderQuestion();
+}
+function appendNext(){let eligible=session.pool.filter(q=>!seenGlobal.has(q.id));if(!eligible.length){session.pool=shuffled(getPool(session.mode,session.depth));eligible=session.pool.filter(q=>!seenGlobal.has(q.id))}
+ if(!eligible.length){toast("You've explored every question in this selection.");return false}
+ const q=eligible[0];session.pool=session.pool.filter(x=>x.id!==q.id);session.history=session.history.slice(0,session.index+1);session.history.push(q);session.index=session.history.length-1;seenGlobal.add(q.id);currentQuestion=q;return true}
+function moveNext(){if(session.limit&&session.index+1>=session.limit){showRecap();return}if(appendNext()){renderQuestion()}else showRecap()}
+function movePrevious(){if(session.index>0){stopTimer();session.index--;currentQuestion=session.history[session.index];renderQuestion()}else toast("You're at the first question.")}
+function renderQuestion(){if(!currentQuestion){$("questionText").textContent="No questions found for this selection.";return}
+ const q=currentQuestion;const modeName=modeInfo[session.mode]?.name||"RANDOM DISCOVERY";$("sessionCrumb").textContent=modeName+" · "+(session.depth==="any"?"ALL DEPTHS":session.depth.toUpperCase());$("qLabel").textContent=q.category.toUpperCase()+" · "+q.depth.toUpperCase();$("questionText").textContent=q.text;$("qMeta").textContent=q.depth==="light"?"Start anywhere. There are no wrong answers.":q.depth==="deep"?"Take your time. You can always skip.":"A little curiosity can change a conversation.";
+ $("progressBar").style.width=Math.min(100,session.limit?(Math.min(session.index+1,session.limit)/session.limit)*100:(seenGlobal.size/(session.pool.length+seenGlobal.size))*100)+"%";$("saveBtn").textContent=favorites.has(q.id)?"♥ Saved":"♡ Save";$("previousBtn").disabled=session.index===0;$("previousBtn").style.opacity=session.index===0?".45":"1";document.querySelectorAll(".depth-btn").forEach(b=>b.classList.toggle("selected",b.dataset.depth===(session.depth==="any"?"reflective":session.depth)));if(!$("timerSelect").value||$("timerSelect").value==="0")$("timerDisplay").textContent="—:—";else if(!timerRunning&&timerRemaining===0)resetTimer()}
+function showRecap(){stopTimer();const old=$("questionText");old.textContent="That's a conversation worth having."; $("qLabel").textContent="SESSION COMPLETE";$("qMeta").textContent=`You explored ${session.history.length} question${session.history.length===1?"":"s"}. Save the ones that stayed with you, or begin again.`;$("nextBtn").textContent="Start again ↻";$("nextBtn").onclick=()=>startSession(session.mode,session.depth,session.limit);$("previousBtn").disabled=true;$("skipBtn").disabled=true;$("progressBar").style.width="100%";$("saveBtn").disabled=true}
+function resetSessionButtons(){ $("nextBtn").textContent="Next question →";$("nextBtn").onclick=moveNext;$("skipBtn").disabled=false;$("saveBtn").disabled=false}
+function startSessionWrapped(mode,depth,limit,firstId){resetSessionButtons();startSession(mode,depth,limit,firstId)}
+function stopTimer(){if(timerId)clearInterval(timerId);timerId=null;timerRunning=false}
+function resetTimer(){stopTimer();timerRemaining=Number($("timerSelect").value)||0;updateTimer();$("timerNote").textContent=timerRemaining?"Ready when you are.":"A little time to think. No pressure."}
+function updateTimer(){if(!timerRemaining){$("timerDisplay").textContent="—:—";return}const m=Math.floor(timerRemaining/60),s=timerRemaining%60;$("timerDisplay").textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0")}
+function startTimer(){if(!Number($("timerSelect").value)){toast("Choose a timer duration first.");return}if(timerRunning)return;if(timerRemaining<=0)timerRemaining=Number($("timerSelect").value);timerRunning=true;$("timerNote").textContent="Timer running";timerId=setInterval(()=>{timerRemaining--;updateTimer();if(timerRemaining<=0){stopTimer();timerRemaining=0;updateTimer();$("timerNote").textContent="Time is up. Take a breath.";toast("Time is up.");if($("autoNext").checked)moveNext()}},1000)}
+function renderSearch(){const term=$("searchInput").value.toLowerCase().trim(),cat=$("categoryFilter").value,dep=$("depthFilter").value;const found=allQuestions().filter(q=>(!term||(q.text+" "+q.category+" "+q.depth).toLowerCase().includes(term))&&(!cat||q.category===cat)&&(!dep||q.depth===dep));$("searchCount").textContent=found.length+" question"+(found.length===1?"":"s")+" found";const target=$("searchResults");target.innerHTML="";if(!found.length){target.innerHTML='<div class="empty">No questions found. Try another word or category.</div>';return}found.forEach(q=>target.appendChild(questionCard(q,true)))}
+function questionCard(q,showOpen=false){const card=document.createElement("div");card.className="result-card";const content=document.createElement("div"),p=document.createElement("p"),small=document.createElement("small");p.textContent=q.text;small.textContent=q.category+" · "+q.depth;content.append(p,small);const actions=document.createElement("div");actions.className="result-actions";const open=document.createElement("button");open.className="small-btn";open.textContent="Ask ↗";open.onclick=()=>{startSessionWrapped("mixed","any",0,q.id)};const save=document.createElement("button");save.className="small-btn";save.textContent=favorites.has(q.id)?"♥":"♡";save.setAttribute("aria-label","Toggle favorite");save.onclick=()=>{toggleFavorite(q.id);save.textContent=favorites.has(q.id)?"♥":"♡"};actions.append(open,save);card.append(content,actions);return card}
+function renderFavorites(){const target=$("favoriteResults");target.innerHTML="";const fav=allQuestions().filter(q=>favorites.has(q.id));if(!fav.length){target.innerHTML='<div class="empty">Your archive is empty for now.<br><br>When a question stays with you, save it here.</div>';return}fav.forEach(q=>target.appendChild(questionCard(q,true)))}
+function toggleFavorite(id){if(favorites.has(id))favorites.delete(id);else favorites.add(id);persist();$("favCount").textContent=favorites.size;if(currentQuestion&&currentQuestion.id===id)$("saveBtn").textContent=favorites.has(id)?"♥ Saved":"♡ Save";toast(favorites.has(id)?"Saved to your archive.":"Removed from saved questions.");}
+function copyText(text){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>toast("Copied to clipboard.")).catch(()=>fallbackCopy(text))}else fallbackCopy(text)}
+function fallbackCopy(text){const el=document.createElement("textarea");el.value=text;document.body.appendChild(el);el.select();try{document.execCommand("copy");toast("Copied to clipboard.")}catch{toast("Copy isn't available in this browser.")}el.remove()}
+function renderParticipants(){const list=$("participantList");list.innerHTML="";if(!participants.length){list.innerHTML='<div class="empty" style="grid-column:1/-1">No names yet. You can also use this mode without names.</div>';$("currentParticipant").textContent="Add a participant";return}participants.forEach((name,i)=>{const div=document.createElement("div");div.className="result-card";div.style.padding="10px 12px";const span=document.createElement("span");span.textContent=(i+1)+". "+name;const remove=document.createElement("button");remove.className="small-btn";remove.textContent="Remove";remove.onclick=()=>{participants.splice(i,1);participantIndex=participants.length?participantIndex%participants.length:0;renderParticipants()};div.append(span,remove);list.append(div)});$("currentParticipant").textContent=participants[participantIndex%participants.length]}
+function nextTurn(){if(!participants.length){toast("Add at least one participant first.");return}participantIndex=(participantIndex+1)%participants.length;renderParticipants()}
+function showRecapFix(){resetSessionButtons()}
+$("brandHome").onclick=()=>showScreen("homeScreen");$("brandHome").onkeydown=e=>{if(e.key==="Enter")showScreen("homeScreen")};
+$("enterBtn").onclick=()=>startSessionWrapped("mixed","any",0);$("surpriseBtn").onclick=()=>startSessionWrapped("mixed","any",0);$("modeGrid").onclick=e=>{const b=e.target.closest("[data-mode]");if(b)startSessionWrapped(b.dataset.mode,modeInfo[b.dataset.mode].depth,0)};
+$("dailyStart").onclick=()=>startSessionWrapped("mixed","any",0);$("dailyCopy").onclick=()=>copyText($("dailyQuestion").textContent);$("customOpen").onclick=()=>showScreen("customScreen");$("groupOpen").onclick=()=>showScreen("groupScreen");$("searchOpen").onclick=()=>showScreen("searchScreen");$("favoritesOpen").onclick=()=>showScreen("favoritesScreen");$("themeToggle").onclick=()=>{document.body.classList.toggle("light");localStorage.setItem("lmya_light",document.body.classList.contains("light"))};
+$("backHome").onclick=()=>{stopTimer();showScreen("homeScreen")};$("endSession").onclick=()=>{stopTimer();showRecap();};$("nextBtn").onclick=moveNext;$("previousBtn").onclick=movePrevious;$("skipBtn").onclick=moveNext;$("randomBtn").onclick=moveNext;$("saveBtn").onclick=()=>currentQuestion&&toggleFavorite(currentQuestion.id);$("copyBtn").onclick=()=>currentQuestion&&copyText(currentQuestion.text);$("shareBtn").onclick=()=>{if(!currentQuestion)return;if(navigator.share)navigator.share({title:"Lemme Know About You",text:currentQuestion.text}).catch(()=>{});else copyText(currentQuestion.text)};
+$("timerSelect").onchange=resetTimer;$("timerStart").onclick=startTimer;$("timerPause").onclick=()=>{stopTimer();$("timerNote").textContent="Paused";};$("timerReset").onclick=resetTimer;$("autoNext").onchange=()=>toast($("autoNext").checked?"Auto-next enabled.":"Auto-next disabled.");
+document.querySelectorAll(".depth-btn").forEach(b=>b.onclick=()=>{const depth=b.dataset.depth;resetSessionButtons();startSessionWrapped(session.mode,depth,session.limit)});
+$("fullBtn").onclick=()=>{const el=document.querySelector(".question-shell");if(!document.fullscreenElement&&el.requestFullscreen)el.requestFullscreen().catch(()=>toast("Full-screen isn't supported here."));else if(document.exitFullscreen)document.exitFullscreen()};
+$("customFooter").onclick=()=>showScreen("customScreen");$("aboutOpen").onclick=()=>showScreen("aboutScreen");$("createSession").onclick=()=>{const mode=$("customMode").value,depth=$("customDepth").value,limit=Number($("customLength").value);if(!getPool(mode,depth).length){toast("No questions match that combination.");return}startSessionWrapped(mode,depth,limit);$("timerSelect").value=$("customTimer").value;resetTimer()};
+$("addParticipant").onclick=()=>{const input=$("participantInput"),name=input.value.trim();if(!name)return;if(participants.some(p=>p.toLowerCase()===name.toLowerCase())){toast("That name is already in the group.");return}participants.push(name);input.value="";renderParticipants()};$("participantInput").onkeydown=e=>{if(e.key==="Enter")$("addParticipant").click()};$("nextParticipant").onclick=nextTurn;$("startGroup").onclick=()=>{const depth=$("groupDepth").value;startSessionWrapped("mixed",depth==="any"?"any":depth,0);if(participants.length)toast("Up next: "+participants[participantIndex%participants.length])};
+$("searchInput").oninput=renderSearch;$("categoryFilter").onchange=renderSearch;$("depthFilter").onchange=renderSearch;
+$("clearData").onclick=()=>{if(confirm("Clear saved questions, custom questions, and local preferences on this device?")){favorites.clear();customQuestions=[];localStorage.removeItem("lmya_favorites");localStorage.removeItem("lmya_custom");localStorage.removeItem("lmya_light");$("favCount").textContent="0";toast("Local data cleared.");}};
+$("favCount").textContent=favorites.size;$("year").textContent=new Date().getFullYear();if(localStorage.getItem("lmya_light")==="true")document.body.classList.add("light");
+const cats=[...new Set(allQuestions().map(q=>q.category))].sort();cats.forEach(c=>{const o=document.createElement("option");o.value=c;o.textContent=c;$("categoryFilter").append(o)});
+const dayKey=new Date().toISOString().slice(0,10),dayHash=[...dayKey].reduce((a,c)=>a+c.charCodeAt(0),0);$("dailyQuestion").textContent=questions[dayHash%questions.length].text;
+renderParticipants();resetSessionButtons();startSession("mixed","any",0);showScreen("homeScreen");
+</script>
+</body>
+</html>
